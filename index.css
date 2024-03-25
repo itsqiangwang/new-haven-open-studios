@@ -25,14 +25,14 @@ h1,h2,figure{
 
 .triptych-container .header{
     opacity: 0;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .triptych-container>div{
     width: calc(100% / 3);
     height: 100%;
     word-break: break-all;
-    padding: 20px;
+    /* padding: 20px; */
     overflow: hidden;
     transition: 0.5s;
 }
@@ -51,6 +51,7 @@ h1,h2,figure{
 figure{
     transform: scaleX(-1);
     opacity: 0.25;
+    margin: 20px;
 }
 
 .triptych-container>div:hover figure{
@@ -60,6 +61,7 @@ figure{
 
 img{
     width: 100%;
+    margin-top: 20px;
 }
 
 a{
@@ -73,10 +75,15 @@ a:hover{
 }
 
 figcaption{
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 /* ******************************** */
+
+.header h1,
+.footer h2{
+    margin: 20px !important;
+}
 
 .header-container{
     display: flex;
@@ -94,7 +101,6 @@ figcaption{
     width: calc(100% / 3);
     height: 100%;
     word-break: break-all;
-    padding: 20px;
 }
 
 .header-container>div:nth-of-type(2){
@@ -125,15 +131,15 @@ figcaption{
 }
 
 @media only screen and (max-width: 600px){
-    /* h1,h2,figure{
-        font-size: 18pt;
+    h1,h2,figure{
+        font-size: 24pt;
     }
 
     .header-container{
         -webkit-text-stroke: 0.75px black;
     }
 
-    .triptych-container{
+    /* .triptych-container{
         align-items: center;
         justify-content: center;
     } */
