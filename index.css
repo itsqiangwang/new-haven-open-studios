@@ -19,8 +19,8 @@ h1,h2,figure{
 .triptych-container{
     display: flex;
     width: 100vw;
-    height: 100vh;
-    background-color: white;
+    height: 100vh;    
+    background-color: rgb(225, 225, 225);
 }
 
 .triptych-container .header{
@@ -34,7 +34,7 @@ h1,h2,figure{
     word-break: break-all;
     padding: 20px;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .triptych-container>div:nth-of-type(2){
@@ -50,7 +50,7 @@ h1,h2,figure{
 
 figure{
     transform: scaleX(-1);
-    opacity: 0.1;
+    opacity: 0.25;
 }
 
 .triptych-container>div:hover figure{
@@ -68,14 +68,24 @@ a{
     color: blue;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
+figcaption{
+    padding-top: 20px;
+}
+
+/* ******************************** */
+
 .header-container{
     display: flex;
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
-    -webkit-text-stroke: 1px black;
-    color: white;
+    -webkit-text-stroke: 1.5px black;
+    color: transparent;
 }
 
 .header-container>div{
@@ -114,12 +124,17 @@ a{
     justify-content: flex-end;
 }
 
-@media only screen and (max-width: 600px) {
-    h1,h2,figure{
-        font-size: 12pt;
+@media only screen and (max-width: 600px){
+    /* h1,h2,figure{
+        font-size: 18pt;
     }
 
     .header-container{
         -webkit-text-stroke: 0.75px black;
     }
-} 
+
+    .triptych-container{
+        align-items: center;
+        justify-content: center;
+    } */
+}
